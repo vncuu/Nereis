@@ -1,0 +1,7 @@
+<script>
+  // Check if the user is on the root path ("/")
+  if (window.location.pathname === "/") {
+    // Redirect to Veilith.com/en/
+    window.location.href = "/en/";
+  }
+</script>
