@@ -1,1 +1,15 @@
+<script>
+  // Check if the user is not already on the /en-gb page
+  if (window.location.pathname === "/") {
+    // Get the user's preferred language
+    const userLanguage = navigator.language || navigator.userLanguage;
+    
+    // Check if the language is set to English (UK)
+    if (userLanguage.startsWith("en") && !userLanguage.startsWith("en-us")) {
+      // Redirect to the /en-gb/ page
+      window.location.href = "/en-gb/";
+    }
+  }
+</script>
+
 
